@@ -26,12 +26,20 @@
   width: 25%;
 }
 
-a {
+.footer-item1 a {
   text-decoration: none;
   color: #737373;
 }
-a:hover{
-    text-decoration: underline;
+.footer-item1 a:hover {
+  text-decoration: underline;
+}
+
+.footer-box a {
+  text-decoration: none;
+  color: #737373;
+}
+.footer-box a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

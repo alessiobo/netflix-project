@@ -24,6 +24,20 @@
     vertical-align: top;
     width: 25%;
 }
-a{
+.footer-item1 a {
     text-decoration: none;
+    color: #737373;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer-box a {
+    text-decoration: none;
+    color: #737373;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
