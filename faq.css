@@ -1,0 +1,132 @@
+/*Reset*/
+@font-face {
+  font-family: NetflixSans;
+  src: url("NetflixSans-Regular.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: NetflixSans;
+}
+
+/*Font Netflix Homepage*/
+/*Palette Netflix Homepage*/
+@font-face {
+  font-family: NetflixSans;
+  src: url("NetflixSans-Regular.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: NetflixSans;
+}
+
+.faq {
+  background-color: #000;
+  color: white;
+}
+
+div.faq form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  margin: 20px 100px 0;
+  row-gap: 15px;
+}
+div.faq input {
+  padding: 15px 10px;
+  font-size: 1.2rem;
+  width: 100%;
+}
+div.faq input ~ span {
+  position: absolute;
+  left: 12px;
+  top: 19px;
+  z-index: 3;
+  color: #aaa;
+  transition: all 0.15s ease;
+  pointer-events: none;
+  font-size: 16px;
+}
+div.faq input:focus {
+  padding-top: 19px;
+  padding-bottom: 11px;
+}
+div.faq input:focus ~ span {
+  top: 4px;
+  font-size: 0.8rem;
+}
+div.faq button {
+  font-size: 1.625rem;
+  padding: 12px 26px;
+  background-color: #e50914;
+  border-radius: 0;
+  color: white;
+  border: 0;
+}
+
+div.faq {
+  padding: 70px 30px;
+}
+div.faq h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+div.faq h3 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-top: 70px;
+  text-align: center;
+}
+
+div.questions {
+  max-width: 775px;
+  margin: 0 auto;
+  font-size: 1.625rem;
+}
+
+div.question {
+  position: relative;
+  background-color: #303030;
+  margin-bottom: 8px;
+  width: 100%;
+}
+div.question svg {
+  width: 30px;
+  height: 30px;
+  right: 30px;
+  top: 20px;
+  position: absolute;
+  transform: rotate(90deg);
+  transition: all 0.2s ease;
+}
+div.question .header {
+  display: block;
+  padding: 20px 30px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+div.question div.answer {
+  padding: 0 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+div.question div.answer a {
+  color: white;
+}
+div.question input[type=checkbox] {
+  display: none;
+}
+div.question input[type=checkbox]:checked ~ div.answer {
+  padding: 30px 30px;
+  max-height: 600px;
+}
+div.question input[type=checkbox]:checked ~ .header svg {
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=style.css.map */
