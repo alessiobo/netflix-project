@@ -2,7 +2,6 @@
   font-family: NetflixSans;
   src: url(NetflixSans-Regular.woff2);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +14,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 html .logo-btn-container {
   font-size: 1.438rem;
   display: flex;
@@ -28,7 +26,6 @@ html .logo-btn-container {
   position: relative;
   top: -20px;
 }
-
 html .logo-btn-container img {
   width: 25%;
 }
