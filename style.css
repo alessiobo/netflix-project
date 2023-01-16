@@ -9,12 +9,12 @@
   font-family: NetflixSans;
 }
 
-header {
+body {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://assets.nflxext.com/ffe/siteui/vlv3/84526d58-475e-4e6f-9c81-d2d78ddce803/2ee277f1-6992-49a5-a194-d6bf0fed9b4d/IT-it-20221228-popsignuptwoweeks-perspective_alpha_website_small.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
-header .logo-btn-container {
+body .logo-btn-container {
   font-size: 1.438rem;
   display: flex;
   justify-content: flex-start;
@@ -26,20 +26,20 @@ header .logo-btn-container {
   position: relative;
   top: -20px;
 }
-header .logo-btn-container img {
+body .logo-btn-container img {
   width: 25%;
 }
-header .logo-btn-container .btn-container {
+body .logo-btn-container .btn-container {
   margin-left: auto;
 }
-header .logo-btn-container .btn-container .switcher-container {
+body .logo-btn-container .btn-container .switcher-container {
   letter-spacing: 0;
   display: inline-block;
 }
-header .logo-btn-container .btn-container .switcher-container .lang-switcher {
+body .logo-btn-container .btn-container .switcher-container .lang-switcher {
   display: inline-block;
 }
-header .logo-btn-container .btn-container .switcher-container .language-switcher {
+body .logo-btn-container .btn-container .switcher-container .language-switcher {
   background-color: transparent;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
@@ -50,11 +50,11 @@ header .logo-btn-container .btn-container .switcher-container .language-switcher
   -moz-appearance: none;
   -webkit-appearance: none;
 }
-header .logo-btn-container .btn-container .access-btn {
+body .logo-btn-container .btn-container .access-btn {
   display: inline-block;
   position: relative;
 }
-header .logo-btn-container .btn-container .access-btn .red-btn {
+body .logo-btn-container .btn-container .access-btn .red-btn {
   color: white;
   background-color: #e50914;
   padding: 8px 22px;
@@ -62,6 +62,55 @@ header .logo-btn-container .btn-container .access-btn .red-btn {
   border-radius: 7px;
   margin-top: 0px;
   cursor: pointer;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .main-paragraph {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+main section .main-paragraph h1 {
+  font-size: 2.5rem;
+}
+main section .main-paragraph h2 {
+  font-size: 1.625rem;
+}
+main section .main-paragraph h3 {
+  font-size: 1.438rem;
+}
+main .email-form .email-textarea {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+main .email-form .email-textarea input {
+  padding: 8px 22px;
+  font-size: 1.625rem;
+  min-height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+main .email-form .email-textarea .red-btn {
+  background-color: #e50914;
+  color: white;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: black;
+  padding: 17px 44px;
+  font-size: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 400;
+  height: 100%;
+}
+main .email-form .email-textarea .red-btn:hover {
+  background-color: #f6121d;
 }
 
 @font-face {
