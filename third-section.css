@@ -1,0 +1,93 @@
+/*----third-section------------*/
+@font-face {
+  font-family: NetflixSans;
+  src: url(NetflixSans-Regular.woff2);
+}
+/*Font Netflix Homepage*/
+/*Palette Netflix Homepage*/
+@font-face {
+  font-family: NetflixSans;
+  src: url(third-section-files/NetflixSans-Regular.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: NetflixSans;
+  letter-spacing: 0 !important;
+}
+
+.card-third-section {
+  background-color: black;
+  border-bottom: 8px solid #222;
+  color: white;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+}
+
+.card-third-section .third-card-container,
+.card-third-section .fourth-card-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.card-third-section .third-section h1 {
+  font-weight: 800;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.card-third-section .third-section h2 {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.card-third-section .third-card-container h1,
+.card-third-section .fourth-card-container h1 {
+  color: white;
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.card-third-section .third-card-container h2,
+.card-third-section .fourth-card-container h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.third-section img {
+  border: 0;
+  height: auto;
+  max-width: 500px;
+}
+
+.third-card-img {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.third-card-text {
+  flex: 0 1 auto;
+  height: 100%;
+  padding: 0 3rem 0 0;
+  width: 52%;
+  z-index: 3;
+}
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=third-section.css.map */
