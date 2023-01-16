@@ -26,6 +26,7 @@ header .logo-btn-container {
   position: relative;
   top: -20px;
 }
+
 header .logo-btn-container img {
   width: 25%;
 }
@@ -375,21 +376,12 @@ div.question input[type=checkbox]:checked ~ .header svg {
   width: 100%;
   background-color: black;
 }
-
-.footer-links {
-  box-sizing: border-box;
-  font-size: 13px;
-  max-width: 1000px;
-}
-
-.footer-item1 {
-  box-sizing: border-box;
+html .logo-btn-container .btn-container .switcher-container {
+  letter-spacing: 0;
   display: inline-block;
-  margin-bottom: 16px;
-  min-width: 100px;
-  padding: 0 12px 0 0;
-  vertical-align: top;
-  width: 25%;
+}
+html .logo-btn-container .btn-container .switcher-container .lang-switcher {
+  display: inline-block;
 }
 
 .footer-item1 a {

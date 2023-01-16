@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +14,23 @@
   <header>
     <div class="logo-btn-container">
       <span><img src="images/Netflix-Logo.wine.svg" alt=""></span>
+      <div class="btn-container">
+        <div class="switcher-container">
+          <label for="language-switcher"></label>
+          <div class="box-icon">
+            <i class="fa-solid fa-globe"></i>
+            <select class="language-switcher">
+              <option lang="it" value="italian">Italiano</option>
+              <option lang="en" value="english">English</option>
+            </select>
+          </div>
+        </div>
+        <div class="access-btn">
+          <button class="btn red-btn">Accedi</button>
+        </div>
+      </div>
     </div>
-
   </header>
-
   <main>
     <body>
     <div class="story-card-container">
@@ -222,7 +236,7 @@
               contenuti in base alla fascia d'età e bloccare la visione di titoli specifici.
             </div>
           </div>
-
+          
           <h3>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h3>
           <form>
             <div>
