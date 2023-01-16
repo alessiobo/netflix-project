@@ -26,9 +26,42 @@ header .logo-btn-container {
   position: relative;
   top: -20px;
 }
-
 header .logo-btn-container img {
   width: 25%;
+}
+header .logo-btn-container .btn-container {
+  margin-left: auto;
+}
+header .logo-btn-container .btn-container .switcher-container {
+  letter-spacing: 0;
+  display: inline-block;
+}
+header .logo-btn-container .btn-container .switcher-container .lang-switcher {
+  display: inline-block;
+}
+header .logo-btn-container .btn-container .switcher-container .language-switcher {
+  background-color: transparent;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #aaa;
+  padding: 8px 22px;
+  font-size: 1.438rem;
+  border-radius: 7px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+header .logo-btn-container .btn-container .access-btn {
+  display: inline-block;
+  position: relative;
+}
+header .logo-btn-container .btn-container .access-btn .red-btn {
+  color: white;
+  background-color: #e50914;
+  padding: 8px 22px;
+  font-size: 1.438rem;
+  border-radius: 7px;
+  margin-top: 0px;
+  cursor: pointer;
 }
 
 @font-face {
@@ -376,12 +409,21 @@ div.question input[type=checkbox]:checked ~ .header svg {
   width: 100%;
   background-color: black;
 }
-html .logo-btn-container .btn-container .switcher-container {
-  letter-spacing: 0;
-  display: inline-block;
+
+.footer-links {
+  box-sizing: border-box;
+  font-size: 13px;
+  max-width: 1000px;
 }
-html .logo-btn-container .btn-container .switcher-container .lang-switcher {
+
+.footer-item1 {
+  box-sizing: border-box;
   display: inline-block;
+  margin-bottom: 16px;
+  min-width: 100px;
+  padding: 0 12px 0 0;
+  vertical-align: top;
+  width: 25%;
 }
 
 .footer-item1 a {
@@ -400,4 +442,4 @@ html .logo-btn-container .btn-container .switcher-container .lang-switcher {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=styleHeader.css.map */
+/*# sourceMappingURL=style.css.map */
