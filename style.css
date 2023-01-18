@@ -33,7 +33,7 @@ body .logo-btn-container img {
 }
 body .logo-btn-container .btn-container {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 body .logo-btn-container .btn-container .switcher-container {
   letter-spacing: 0;
