@@ -27,7 +27,8 @@
 }
 
 .card-third-section .third-card-container,
-.card-third-section .fourth-card-container {
+.card-third-section .fourth-card-container,
+ .second-card-container, .first-card-container{
     align-items: center;
     display: flex;
     justify-content: space-between;
