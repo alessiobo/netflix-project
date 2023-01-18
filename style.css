@@ -492,6 +492,7 @@ div.faq form {
   grid-template-columns: 1fr max-content;
   margin: 20px 100px 0;
   row-gap: 15px;
+  
 }
 div.faq input {
   padding: 15px 10px;
@@ -535,7 +536,7 @@ div.faq h1 {
 }
 div.faq h3 {
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 70px;
   text-align: center;
 }
