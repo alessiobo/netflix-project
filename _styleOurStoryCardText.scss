@@ -1,64 +1,93 @@
 @use 'sass:color';
 
 main {
-    
+
     .our-story-container {
         display: flex;
         justify-content: center;
         align-items: center;
         border-bottom: 8px solid $gray-divider;
 
-        .main-paragraph {
+        .our-story-card {
             display: inline-block;
             color: $white;
             text-align: center;
-            font-weight: lighter;
+            padding: 50px 5%;
+            margin-bottom: 70px;
 
             h1 {
                 font-size: $h1-font-size;
+                font-weight: 400;
+                margin: 0 auto;
             }
 
             h2 {
                 font-size: $h2-font-size;
+                font-weight: 400;
+                margin: 1rem auto;
             }
 
             h3 {
                 font-size: $h3-font-size;
-            }
-        }
-    }
-
-    .email-form {
-        .email-textarea {
-            display: flex;
-            justify-content: center;
-            margin: 25px;
-
-            input {
-                padding: 8px 22px;
-                font-size: $h2-font-size;
-                min-height: 100%;
-                border-top-left-radius: $border-radius;
-                border-bottom-left-radius: $border-radius;
-            }
-
-            .red-btn {
-                background-color: $red;
-                color: $white;
-                border-top-right-radius: $border-radius;
-                border-bottom-right-radius: $border-radius;
-                border: black;
-                padding: 17px 44px;
-                font-size: 35px;
-                text-align: center;
-                cursor: pointer;
                 font-weight: 400;
-                height: 100%;
+                margin: 0 auto;
+                max-width: 450px;
+            }
 
-                &:hover {
-                    background-color: color.adjust($red, $lightness: 5%);
+            .email-form {
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr max-content;
+                margin: 20px 100px 0;
+                row-gap: 15px;
+
+                .red-btn {
+                    font-size: $h2-font-size;
+                    padding: 12px 26px;
+                    background-color: $red;
+                    border-radius: 0;
+                    color: white;
+                    border: 0;
+
+                    &:hover {
+                        background-color: color.adjust($red, $lightness: 5%);
+                    }
                 }
             }
+
+            input {
+                padding: 15px 10px;
+                font-size: 1.2rem;
+                width: 500px;
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+
+                ~ {
+                    span {
+                        position: absolute;
+                        left: 12px;
+                        top: 19px;
+                        z-index: 3;
+                        color: #aaa;
+                        transition: all 0.15s ease;
+                        pointer-events: none;
+                        font-size: 16px;
+                    }
+                }
+
+                &:focus {
+                    padding-top: 19px;
+                    padding-bottom: 11px;
+
+                    ~ {
+                        span {
+                            top: 4px;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

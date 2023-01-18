@@ -24,7 +24,8 @@ body {
         }
 
         .btn-container {
-            margin-left: auto;
+            display: flex;
+            gap: 10px;
 
             .switcher-container {
                 letter-spacing: 0;
@@ -40,8 +41,8 @@ body {
                     background-color: rgba(0, 0, 0, 0.4);
                     border: 1px solid #aaa;
                     padding: 8px 22px;
-                    font-size: $h3-font-size;
-                    border-radius: 7px;
+                    font-size: $language-switcher-font-size;
+                    border-radius: 2px;
                     -moz-appearance: none;
                     -webkit-appearance: none;
                 }
@@ -53,10 +54,11 @@ body {
 
                 .red-btn {
                     color: $white;
+                    border: none;
                     background-color: $red;
-                    padding: 8px 22px;
-                    font-size: $h3-font-size;
-                    border-radius: 7px;
+                    padding: 7px 17px;
+                    font-size: $access-red-btn-font-size;
+                    border-radius: 2px;
                     margin-top: 0px;
                     cursor: pointer;
                 }

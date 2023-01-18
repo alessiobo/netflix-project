@@ -32,7 +32,8 @@ body .logo-btn-container img {
   width: 25%;
 }
 body .logo-btn-container .btn-container {
-  margin-left: auto;
+  display: flex;
+  gap: 10px;
 }
 body .logo-btn-container .btn-container .switcher-container {
   letter-spacing: 0;
@@ -47,8 +48,8 @@ body .logo-btn-container .btn-container .switcher-container .language-switcher {
   background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid #aaa;
   padding: 8px 22px;
-  font-size: 1.438rem;
-  border-radius: 7px;
+  font-size: 0.875rem;
+  border-radius: 2px;
   -moz-appearance: none;
   -webkit-appearance: none;
 }
@@ -58,10 +59,11 @@ body .logo-btn-container .btn-container .access-btn {
 }
 body .logo-btn-container .btn-container .access-btn .red-btn {
   color: white;
+  border: none;
   background-color: #e50914;
-  padding: 8px 22px;
-  font-size: 1.438rem;
-  border-radius: 7px;
+  padding: 7px 17px;
+  font-size: 1rem;
+  border-radius: 2px;
   margin-top: 0px;
   cursor: pointer;
 }
@@ -72,48 +74,71 @@ main .our-story-container {
   align-items: center;
   border-bottom: 8px solid #222;
 }
-main .our-story-container .main-paragraph {
+main .our-story-container .our-story-card {
   display: inline-block;
   color: white;
   text-align: center;
-  font-weight: lighter;
+  padding: 50px 5%;
+  margin-bottom: 70px;
 }
-main .our-story-container .main-paragraph h1 {
+main .our-story-container .our-story-card h1 {
   font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 auto;
 }
-main .our-story-container .main-paragraph h2 {
+main .our-story-container .our-story-card h2 {
   font-size: 1.625rem;
+  font-weight: 400;
+  margin: 1rem auto;
 }
-main .our-story-container .main-paragraph h3 {
+main .our-story-container .our-story-card h3 {
   font-size: 1.438rem;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 450px;
 }
-main .email-form .email-textarea {
-  display: flex;
-  justify-content: center;
-  margin: 25px;
+main .our-story-container .our-story-card .email-form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  margin: 20px 100px 0;
+  row-gap: 15px;
 }
-main .email-form .email-textarea input {
-  padding: 8px 22px;
+main .our-story-container .our-story-card .email-form .red-btn {
   font-size: 1.625rem;
-  min-height: 100%;
+  padding: 12px 26px;
+  background-color: #e50914;
+  border-radius: 0;
+  color: white;
+  border: 0;
+}
+main .our-story-container .our-story-card .email-form .red-btn:hover {
+  background-color: #f6121d;
+}
+main .our-story-container .our-story-card input {
+  padding: 15px 10px;
+  font-size: 1.2rem;
+  width: 500px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-main .email-form .email-textarea .red-btn {
-  background-color: #e50914;
-  color: white;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border: black;
-  padding: 17px 44px;
-  font-size: 35px;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 400;
-  height: 100%;
+main .our-story-container .our-story-card input ~ span {
+  position: absolute;
+  left: 12px;
+  top: 19px;
+  z-index: 3;
+  color: #aaa;
+  transition: all 0.15s ease;
+  pointer-events: none;
+  font-size: 16px;
 }
-main .email-form .email-textarea .red-btn:hover {
-  background-color: #f6121d;
+main .our-story-container .our-story-card input:focus {
+  padding-top: 19px;
+  padding-bottom: 11px;
+}
+main .our-story-container .our-story-card input:focus ~ span {
+  top: 4px;
+  font-size: 0.8rem;
 }
 
 @font-face {
