@@ -2,10 +2,11 @@
 
 main {
     
-    section {
+    .our-story-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: 8px solid $gray-divider;
 
         .main-paragraph {
             display: inline-block;

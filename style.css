@@ -66,24 +66,25 @@ body .logo-btn-container .btn-container .access-btn .red-btn {
   cursor: pointer;
 }
 
-main section {
+main .our-story-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 8px solid #222;
 }
-main section .main-paragraph {
+main .our-story-container .main-paragraph {
   display: inline-block;
   color: white;
   text-align: center;
   font-weight: lighter;
 }
-main section .main-paragraph h1 {
+main .our-story-container .main-paragraph h1 {
   font-size: 2.5rem;
 }
-main section .main-paragraph h2 {
+main .our-story-container .main-paragraph h2 {
   font-size: 1.625rem;
 }
-main section .main-paragraph h3 {
+main .our-story-container .main-paragraph h3 {
   font-size: 1.438rem;
 }
 main .email-form .email-textarea {
@@ -457,6 +458,7 @@ img[alt=third-section-stranger-things] {
 .faq {
   background-color: #000;
   color: white;
+  border-bottom: 8px solid #222;
 }
 
 div.faq form {
